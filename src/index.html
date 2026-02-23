@@ -1,29 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid text-center">
+    <div class="card" style="width: 400px; height: 600px;">
+      <div style="position: absolute; top: 10px; left: 10px;">
+        <h1 id="simbolo" style="font-size: 130px;"></h1>
+      </div>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 100px;">
+        <h1 id="numero" style="font-size: 190px;"></h1>
+      </div>
+      <div style="position: absolute; bottom: 10px; right: 10px;">
+        <h1 id="simbolo2" style="font-size: 130px;"></h1>
+      </div>
+    </div>
+    <div class="card-body">
+
+
+      <div class="fixed-bottom p-4 p-4 text-white bg-dark">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
@@ -31,5 +37,6 @@
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
-  </body>
+</body>
+
 </html>
